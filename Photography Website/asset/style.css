@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.main_box {
+    background: url(/asset/photo.jpg) no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+}
+
+#check {
+    display: none;
+}
+
+.btn_one {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    cursor: pointer;
+}
+
+.sidebar_menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+    transform: translateX(-300px);
+    transition: transform 0.3s ease;
+}
+
+#check:checked ~ .sidebar_menu {
+    transform: translateX(0);
+}
+
+.sidebar_menu .logo {
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+}
+
+.sidebar_menu .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btn_two {
+    color: gray;
+    font-size: 30px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 10px 0;
+    padding: 14px 30px;
+}
+
+.menu li i, .menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.menu li a {
+    margin-left: 10px;
+}
+
+.social_media ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social_media ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social_media ul li a {
+    color: white;
+    font-size: 20px;
+}
+/* Add this to your existing style.css file */
+
+header {
+    text-align: center;
+    padding: 50px 0;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+
+main {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+main section {
+    padding: 60px 0;
+}
+
+footer p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
